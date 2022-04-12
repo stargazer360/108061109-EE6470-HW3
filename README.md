@@ -1,11 +1,20 @@
-# Homework 2
-A 3x3 approximated Gaussian blur filter for 256x256 bmp images connected with tlm bus.
+# Homework 3
+Synthesizable Ga
 ## Compile & Run
+For Stratus HLS
+- `$ cd Stratus`
+- `$ cd stratus`
+- `$ make sim_V_B # for behavioral simulation`
+- `$ make sim_V_BASIC or make sim_V_DPA for synthesis and verilog simulation`
+You can choose different version of the filter by including the header file of the version (like SobelFilter_pipe) in system.h and remove the previous included one.
+
+For TLM model
+ - `$ cd TLM Model`
  - `$ mkdir build`
  - `$ cd build`
  - `$ cmake ..`
  - `$ make`
  - `$ make run`
 
-An output image named out.bmp will generate, which is the filtered result of image input.bmp.
-You can replace input.bmp with a 256x256 bmp images with the same name to get corresponding output.
+Alter the EXE_LANTENCY in `$ BlurFilter.h` corresponding to lantency per pixel in previous simulation to get simulation time in TLME model with time annotation  
+
