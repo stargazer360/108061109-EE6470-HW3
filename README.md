@@ -1,5 +1,5 @@
 # Homework 3
-Synthesizable Ga
+Synthesizable Gaussian blur filter.
 ## Compile & Run
 For Stratus HLS
 - `$ cd Stratus`
@@ -16,5 +16,5 @@ For TLM model
  - `$ make`
  - `$ make run`
 
-Alter the EXE_LANTENCY in `$ BlurFilter.h` corresponding to lantency per pixel in previous simulation to get simulation time in TLME model with time annotation  
+Alter the EXE_LANTENCY in `$ BlurFilter.h` corresponding to lantency per pixel in previous simulation to get simulation time in TLME model with time annotation.
 
